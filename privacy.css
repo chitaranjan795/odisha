@@ -1,0 +1,252 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  margin-top: 5rem;
+  background-color: rgb(37, 36, 36);
+}
+
+/* navigation start */
+.navigation{
+  border-radius: 0%;
+  background-color: rgb(207, 61, 8);
+  position: fixed;
+}
+
+.nav-container{
+  padding: 0%;
+}
+
+.name a{
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.2rem;
+  text-transform:capitalize;
+  color: #fff;
+  background-color: transparent;
+}
+
+.name a:hover{
+    text-decoration: none;
+}
+
+.link a{
+  color: #fff;
+  font-weight:600;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8rem;
+  background-color: transparent;
+}
+
+.link>li>a:hover{
+   background-color: transparent;
+   color: rgb(192, 191, 188);
+   transition: all 0.5s ease;
+}
+
+.hamburger{
+    display: none;
+}
+/* navigation end */
+.main-container{
+  text-align: justify;
+  box-shadow:  0 0 10px rgba(57, 182, 19, 0.596);
+  margin: 70px auto 20px;
+}
+.main-container li{
+  margin-left: 15px;
+  color: gray;
+  font-family: 'Shippori Antique', sans-serif;
+}
+.main-container h1,.main-container h2{
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  color: rgb(160, 156, 156);
+}
+.main-container p{
+  font-family: 'Shippori Antique', sans-serif;
+  color: gray;
+}
+footer{
+  padding-bottom: 50px;
+}
+.last p{
+  color: rgb(97, 95, 95);
+}
+.last a{
+  color: rgb(97, 95, 95);
+  text-decoration: none;
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+@media only screen and (max-width:768px){
+  html{
+    font-size: 55%;
+  }
+
+  body{
+      background-color: rgb(29, 28, 28);
+  }
+  /* navigation start */
+  .navigation{
+    height: 35px;
+    background-color:rgb(207, 62, 8);
+    box-shadow:  0 0 10px rgba(57, 182, 19, 0.596);
+    position:fixed;
+    padding: 0%;
+  }
+
+  .navigation .name p{
+    font-size: 3rem;
+    padding: 0%;
+    float: left;
+    font-family: 'Dancing Script', cursive;
+  }
+      
+  .nav-container{
+    padding: 0% 15px;
+  }
+  
+  .link{
+    width: 100vw;
+    margin-left: 15%;
+    text-align: left;
+    background-color: rgba(10, 10, 10, 0.884);
+    display: none;
+    position: relative;
+    top: -8px;
+  }
+  
+  .link li{
+    border-bottom: 1px solid rgba(119, 115, 115, 0.514);
+  }
+
+  .link li a{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+      
+  .link>li>a:active{
+    background-color: rgb(66, 68, 70);
+    color: rgb(255, 255, 255);
+    transition: all 0.10s
+  }
+  
+  .hamburger{
+    display: block;
+    background-color: transparent;
+    padding: 5px 7px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: -42px 0px 0 0;
+    float: right;
+    text-align: left;
+  }
+
+  .hamburger .line{
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color:#fff;
+    margin-block: 4px;
+    border-radius: 4px;
+    transition: all .5s ease; 
+  }
+  
+  .hamburger:hover .link a{
+     display: block;
+  }
+
+  .hamburger .line:nth-child(1){
+    width: 3rem;
+  }
+
+  .hamburger .line:nth-child(2){
+    width: 2.2rem;
+  }
+
+  .hamburger .line:nth-child(3){
+    width: 1.4rem;
+  }
+  
+  .hamburger.active .line:nth-child(1){
+    top: .6rem;
+    width: 3.2rem;
+    transform: rotate(40deg);
+    position: relative;
+    background-color: rgb(34, 36, 35);
+  }
+  
+  .hamburger.active .line:nth-child(2){
+    opacity: 0;   
+    position: relative;
+  }
+  
+  .hamburger.active .line:nth-child(3){
+    transform: rotate(-40deg);
+    position: relative;
+    bottom: .8rem;
+    width: 3.2rem;
+    background-color: rgb(35, 36, 35);
+  }
+  /* navigatin end */
+  /* main start */
+  .main-container p{
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 2rem;
+  }
+  /* main end */
+  .main-container{
+    text-align: left;
+    box-shadow:  0 0 0px rgba(12, 12, 12, 0.596);
+    margin: 40px auto 20px;
+  }
+  .main-container h1,.main-container h2{
+    text-align: left;
+    font-size: 2.8rem;
+  }
+  .main-container p{
+    font-size: 1.7rem;
+  }
+  .last p{
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width:400px){
+  html{
+    font-size: 47%;
+  }
+  main .main-container li{
+    font-size: 1.6rem;
+  }
+
+  .main-container h1,.main-container h2{
+    font-size: 2.6rem;
+  }
+
+  .main-container p{
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 361px){
+.navigation .name a p{
+  font-size: 3.2rem;
+}
+.main-container h1,.main-container h2{
+  font-size: 2.3rem;
+}
+
+.main-container p{
+  font-size: 1.5rem;
+}
+}
+@media only screen and (max-width:350px){
+.navigation .name p{
+  font-size: 3.4rem;
+}
+}
