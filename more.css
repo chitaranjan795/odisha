@@ -5,57 +5,79 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-body{
-  margin-top: 5rem;
-}
 
 /* navigation start */
-.navigation{
-  border-radius: 0%;
-  background-color: rgb(207, 62, 8);
-  position: fixed;
+nav{
+  background-color: rgba(78, 146, 32, 0.801);
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  padding: 0 0 0 0;
 }
-
-.nav-container{
+.navigation-container{
   padding: 0%;
 }
-
-.name a{
+nav .navigation-container .nav-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0%;
+}
+.brand-name{
+  margin: 6px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.brand-name a h1{
+  color: black;
+  margin: 0;
   font-weight: bold;
-  font-family: 'Dancing Script', cursive;
-  font-size: 4.2rem;
-  text-transform:capitalize;
-  color: #fff;
-  background-color: transparent;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 4rem;
+}
+.brand-name a{
+  text-decoration: none;
+}
+.list ul{
+  height: 100%;
+  padding:  0 0 0 0;
+  margin: 0px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.list ul li a{
+  font-weight: bold;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: black;
+}
+#hamburgerbutton{
+  width: 25px;
+  margin: 0 0 0 0;
+  display: none;
+}
+.hamburger .line:nth-child(2){
+  width: 75%;
+}
+.hamburger .line:nth-child(3){
+  width: 50%;
 }
 
-.name a:hover{
-    text-decoration: none;
-}
-
-.link a{
-  color: #fff;
-  font-weight:600;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.8rem;
-  background-color: transparent;
-}
-
-.link>li>a:hover{
-   background-color: transparent;
-   color: rgb(192, 191, 188);
-   transition: all 0.5s ease;
-}
-
-.hamburger{
-    display: none;
-}
 /* navigation end */
 
 #heading1{
   color: black;
-  font-size: 4.3rem;
-  line-height: 6rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
 }
@@ -78,7 +100,7 @@ hr{
 }
 .record q, .record p{
   font-family: 'Shippori Antique', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font: weight 400px;
 }
 
@@ -120,9 +142,79 @@ footer #up a:hover{
   font-family: 'Shippori Antique', sans-serif;
 }
 
+@media only screen and (max-width: 1200px){
+  .brand-name a h1{
+      font-size: 3.2rem;
+  }
+  .list ul li a{
+      font-size: 1.9rem;
+  }
+}
+
 @media only screen and (max-width:992px){
   html{
     font-size: 65%;
+  }
+    nav{
+      width: 100%;
+      display: block;
+      padding: 4px 0px;
+  }
+.brand-name{
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.brand-name a h1{
+  font-size: 3.2rem;
+}
+  #hamburgerbutton{
+      display: block;
+      padding: 7px 0;
+      margin: 0%;
+  } 
+  .hamburger .line{
+      width: 100%;
+      height: 2px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 20px;
+      margin-top: 4px;
+      transition: transform .5s, .35s; 
+  }
+  .hamburger.active .line:nth-child(1){
+      transform: translateY(6px) rotate(45deg);
+      transition: all 0.5s;
+  }
+  .hamburger.active .line:nth-child(2){
+      opacity: 0;
+  }
+  .hamburger.active .line:nth-child(3){
+      width: 100%;
+      transform: translateY(-6px) rotate(-45deg);
+      transition: all 0.5s;
+  }
+  .list ul{
+      display: block;
+      position: absolute;
+      top: 0%;
+      left: -65vw;
+      width: 65vw; 
+      z-index: 2;
+      background-color: rgb(44, 117, 121);
+      text-align: left;
+      transition: all 0.5s ease-in-out;
+      padding-top: 25%;
+  }
+  .list ul li{
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: rgb(161, 152, 152);
+  }
+  .list ul li{
+      margin: 0 0 30px 0;
+  }
+  .list ul.active{
+      left: 0vw;
+      box-shadow: 0 0 10px rgb(255, 255, 255);
   }
 }
 
@@ -131,120 +223,20 @@ footer #up a:hover{
     font-size: 55%;
   }
 
-  body{
-    margin-top: 7rem;
-  }
   /* navigation start */
-  .navigation{
-    height: 35px;
-    background-color:rgb(207, 62, 8);
-    position:fixed;
-    padding: 0%;
-  }
-
-  .navigation .name p{
-    font-size: 3rem;
-    padding: 0%;
-    float: left;
-    font-family: 'Dancing Script', cursive;
-  }
-      
-  .nav-container{
-    padding: 0% 15px;
-  }
-  
-  .link{
-    width: 100vw;
-    margin-left: 15%;
-    text-align: left;
-    background-color: rgba(10, 10, 10, 0.884);
-    display: none;
-    position: relative;
-    top: -8px;
-  }
-  
-  .link li{
-    border-bottom: 1px solid rgba(119, 115, 115, 0.514);
-  }
-
-  .link li a{
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-  }
-      
-  .link>li>a:active{
-    background-color: rgb(66, 68, 70);
-    color: rgb(255, 255, 255);
-    transition: all 0.10s
-  }
-  
-  .hamburger{
-    display: block;
-    background-color: transparent;
-    padding: 5px 7px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    margin: -42px 0px 0 0;
-    float: right;
-    text-align: left;
-  }
-
-  .hamburger .line{
-    display: block;
-    width: 20px;
-    height: 3px;
-    background-color:#fff;
-    margin-block: 4px;
-    border-radius: 4px;
-    transition: all .5s ease; 
-  }
-  
-  .hamburger:hover .link a{
-     display: block;
-  }
-
-  .hamburger .line:nth-child(1){
-    width: 3rem;
-  }
-
-  .hamburger .line:nth-child(2){
-    width: 2.2rem;
-  }
-
-  .hamburger .line:nth-child(3){
-    width: 1.4rem;
-  }
-  
-  .hamburger.active .line:nth-child(1){
-    top: .6rem;
-    width: 3.2rem;
-    transform: rotate(40deg);
-    position: relative;
-    background-color: rgb(34, 36, 35);
-  }
-  
-  .hamburger.active .line:nth-child(2){
-    opacity: 0;   
-    position: relative;
-  }
-  
-  .hamburger.active .line:nth-child(3){
-    transform: rotate(-40deg);
-    position: relative;
-    bottom: .8rem;
-    width: 3.2rem;
-    background-color: rgb(35, 36, 35);
-  }
+  .brand-name{
+    margin: 0%;
+}
+    .list ul li a{
+    font-size: 1.8rem;
+}
+    .list ul{
+        padding-top: 30%;
+    }
   /* navigatin end */
   header h1{
     color: black;
     line-height: 4rem;
-  }
-
-  #heading{
-    font-size: 85%;
   }
 
   .record strong{
@@ -256,6 +248,7 @@ footer #up a:hover{
     text-align: justify;
     text-indent: 3rem;
     margin-top: -10px;
+    font-size: 1.8rem;
   }
 
   .record q{
@@ -266,16 +259,31 @@ footer #up a:hover{
   }
 }
 
+  @media only screen and (max-width: 500px){
+    .navigation{
+        padding-top: 7px;
+    }
+    .brand-name a h1{
+        font-size: 2.7rem;
+    }
+    #hamburgerbutton{
+        padding: 2px 0;
+    }
+    .list ul{
+        padding-top: 45%;
+    }
+    .list ul li a{
+        font-size: 1.7rem;
+    }
+}
+
  @media only screen and (max-width: 638px){ 
-  body{
-    margin-top: 5rem;
-  }
   .navigation .name p{
     font-size: 3.7rem;
   }
   #heading{
     display: block;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-family: 'Inter', sans-serif;
   }
   #heading1{

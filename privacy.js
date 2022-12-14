@@ -1,9 +1,7 @@
-const hamburgerMenu = document.querySelector('.hamburger');
-const menuIsActive= () => {
-  hamburgerMenu.classList.toggle('active');
-};
-hamburgerMenu.addEventListener('click', menuIsActive)
+const hambutton = document.querySelector(".hamburger");
+const sidebar = document.querySelector(".list ul");
 
-$(".hamburger").click(function(){
-  $(".link").slideToggle();
-});
+hambutton.addEventListener('click', () => {
+    hambutton.classList.toggle('active');
+    sidebar.classList.toggle('active');
+})
