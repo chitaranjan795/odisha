@@ -5,12 +5,12 @@
   scroll-behavior: smooth;
 }
 body{
-  background-color: rgb(37, 36, 36);
+  background-color: rgb(0, 0, 0);
 }
 
 /* navigation start */
 nav{
-  background-color: rgba(78, 146, 32, 0.801);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   height: auto;
@@ -162,16 +162,17 @@ footer{
       transition: all 0.5s;
   }
   .list ul{
-      display: block;
-      position: absolute;
-      top: 0%;
-      left: -65vw;
-      width: 65vw; 
-      background-color: rgb(44, 117, 121);
-      text-align: left;
-      transition: all 0.5s ease-in-out;
-      padding-top: 25%;
-  }
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: -65vw;
+    width: 65vw; 
+    z-index: 3;
+    background-color: rgba(253, 253, 253, 0.842);
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+    padding-top: 25%;
+}
   .list ul li{
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       color: rgb(161, 152, 152);
@@ -232,7 +233,7 @@ footer{
         padding-top: 7px;
     }
     .brand-name a h1{
-        font-size: 2.7rem;
+        font-size: 3.2rem;
     }
     #hamburgerbutton{
         padding: 4px 0;
@@ -272,9 +273,5 @@ footer{
 .main-container p{
   font-size: 1.5rem;
 }
-}
-@media only screen and (max-width:350px){
-.navigation .name p{
-  font-size: 3.4rem;
-}
+
 }

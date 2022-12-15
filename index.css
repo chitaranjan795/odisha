@@ -3,15 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Shippori Antique', sans-serif;
 }
 body{
   overflow-x: hidden;
+  padding: 0%;
 }
 /* ____________ NAVIGATION START ____________ */
 
 nav{
-  width: 100%;
-  background-color: rgba(78, 146, 32, 0.801);
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   height: auto;
@@ -74,51 +76,58 @@ nav .navigation-container .nav-flex{
 .hamburger .line:nth-child(3){
   width: 50%;
 }
-
 /* ____________ NAVIGATION END ____________ */
 
-/* header start */
+/* ____________ HEADER START ____________ */
   header{
     width: 100vw;
-    height: 620px;
-    background-image: url("images/2ndwallpaper.jpg");
+    height: 660px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/odishabanner.jpg");
+    background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-container{
     padding: 0%;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-
-  header h1{
-    /* height: 750px; */
-    color: #fff;
-    font-size: 3.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  header .head-content{
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    padding: 0%;
+  }
+  header .head-content h1{
+    font-size: 4rem;
+    color: black;
     font-family: 'Rubik Wet Paint', cursive;
-    line-height: 6rem;
-    letter-spacing: 0.7rem;
-    font-weight: 300;
+    margin-top: 0%;
   }
-  hr{
-    width: 180px;
-    margin: 0 auto;
-    /* margin-top: -300px; */
+  header .head-content h1 span strong{
+    color: orange;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-shadow: 0 0 5px rgb(70, 68, 68);
   }
-/* header start */
+  header .head-content p{
+    font-size: 2.2rem;
+    letter-spacing: .1rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    font-weight: 600;
+    margin-bottom: 0%;
+  }
+  #head-line2{
+    display: none;
+  }
+  #head-para2{
+    display: none;
+  }
+/* ____________ HEADER END ____________ */
 
 /* section1 start */
   .section1{
     padding: 50px 0 25px 0;
     text-align: justify;
-    font-family: 'Average', serif;
-    /* background-color: tan; */
   }
 
   .section1 strong{
@@ -139,7 +148,10 @@ nav .navigation-container .nav-flex{
 
 /* section2 start */
   .section2{
-    background:linear-gradient(45deg, burlywood 10%, rgb(94, 167, 167) 50%, rgb(168, 145, 93) 100%);
+    /* background:linear-gradient(45deg, burlywood 10%, rgb(94, 167, 167) 50%, rgb(168, 145, 93) 100%); */
+    background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0)), url("images/indexmiddle.jpg");
+    background-size: cover;
+    background-attachment: fixed;
   }
   .section2-container{
     padding: 80px 0%;
@@ -147,6 +159,7 @@ nav .navigation-container .nav-flex{
   .section2 img{
     border-radius: 10px;
     box-shadow: 0px 0px 50px 0px;
+    border: 5px solid #fff;
   }
   .limg .rajaimg{
     position: relative;
@@ -266,12 +279,12 @@ nav .navigation-container .nav-flex{
     padding-bottom: 20px;
   }
   footer #up a{
-    background-color: rgb(231, 77, 6);
+    background-color: rgb(197, 134, 17);
     padding: 6px 12px;
     color: #fff;
     font-weight: 600;
     transition: all 0.5s;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Shippori Antique', sans-serif;
     font-size: 1rem;
     text-decoration: none;
     margin: 0rem;
@@ -288,12 +301,11 @@ nav .navigation-container .nav-flex{
     border-bottom: 1px solid rgb(116, 121, 116);
   }
   .L1 h2, .L2 h2{
-    color: #fff;
+    color: rgb(136, 131, 131);
     font-family: 'Shippori Antique', sans-serif;
-    font-weight: bold;
   } 
   .L1 a, .L2 a{
-    color: rgb(215, 230, 11);
+    color: rgba(141, 141, 139, 0.568);
     text-decoration: none;
     font-size: 1.7rem;
   }
@@ -304,10 +316,10 @@ nav .navigation-container .nav-flex{
   .L1 a p:hover, .L2 a p:hover{
     padding-left: 3px;
   }
-  .row2 h1,.R strong{
-    color: #fff;
+  .row2 h1,.R h1 strong{
+    color: rgb(155, 34, 34);
     text-align: center;
-    font-family: 'Shippori Antique', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
   }
   .R h1{
     display: none;
@@ -342,66 +354,65 @@ nav .navigation-container .nav-flex{
       margin: 0%;
   }
   nav{
-      width: 100%;
-      display: block;
-      padding: 4px 0px;
-  }
+    width: 100%;
+    display: block;
+    padding: 0px 0px;
+}
 .brand-name{
-  width: 100%;
-  display: inline-flex;
-  justify-content: space-between;
+width: 100%;
+display: inline-flex;
+justify-content: space-between;
 }
 .brand-name a h1{
-  font-size: 3.2rem;
+font-size: 3.5rem;
 }
-  #hamburgerbutton{
-      display: block;
-      padding: 7px 0;
-      margin: 0%;
-  } 
-  .hamburger .line{
-      width: 100%;
-      height: 2px;
-      background-color: rgb(0, 0, 0);
-      border-radius: 20px;
-      margin-top: 4px;
-      transition: transform .5s, .35s; 
-  }
-  .hamburger.active .line:nth-child(1){
-      transform: translateY(6px) rotate(45deg);
-      transition: all 0.5s;
-  }
-  .hamburger.active .line:nth-child(2){
-      opacity: 0;
-  }
-  .hamburger.active .line:nth-child(3){
-      width: 100%;
-      transform: translateY(-6px) rotate(-45deg);
-      transition: all 0.5s;
-  }
-  .list ul{
-      display: block;
-      position: absolute;
-      top: 0%;
-      left: -65vw;
-      width: 65vw; 
-      z-index: 2;
-      background-color: rgb(44, 117, 121);
-      text-align: left;
-      transition: all 0.5s ease-in-out;
-      padding-top: 25%;
-  }
-  .list ul li{
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      color: rgb(161, 152, 152);
-  }
-  .list ul li{
-      margin: 0 0 30px 0;
-  }
-  .list ul.active{
-      left: 0vw;
-      box-shadow: 0 0 10px rgb(255, 255, 255);
-  }
+#hamburgerbutton{
+    display: block;
+    padding: 10px 0;
+    margin: 0%;
+} 
+.hamburger .line{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-top: 4px;
+    transition: transform .5s, .35s; 
+}
+.hamburger.active .line:nth-child(1){
+    transform: translateY(6px) rotate(45deg);
+    transition: all 0.5s;
+}
+.hamburger.active .line:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .line:nth-child(3){
+    width: 100%;
+    transform: translateY(-6px) rotate(-45deg);
+    transition: all 0.5s;
+}
+.list ul{
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: -65vw;
+    width: 65vw; 
+    z-index: 3;
+    background-color: rgba(253, 253, 253, 0.842);
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+    padding-top: 25%;
+}
+.list ul li{
+    color: rgb(161, 152, 152);
+}
+.list ul li{
+    margin: 0 0 30px 0;
+}
+.list ul.active{
+    left: 0vw;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
 }
 
 @media only screen and (max-width:768px){
@@ -413,6 +424,12 @@ nav .navigation-container .nav-flex{
   }
 
   /* navigation start */
+  nav{
+    padding: 4px 0px;
+}
+  #hamburgerbutton{
+    padding: 7px 0;
+  }
   .brand-name{
     margin: 0%;
 }
@@ -424,25 +441,24 @@ nav .navigation-container .nav-flex{
     }
   /* navigatin end */
 
-  /* header start */
+  /* ____________ HEADER START ____________ */
   header{
-    height: 600px;
+    height: 460px;
   }
-  header h1{
-    height: 300px;
-    font-size: 2.8rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    text-align: left;
-    font-family: 'Shippori Antique', sans-serif;
-    line-height: 4rem;
+  header .head-content h1{
+    font-size: 3.3rem;
   }
-  header hr{
-    display: none;
+  header .head-content h1 span strong{
+    font-weight: bold;
+    color: orange;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.842);
   }
-/* header end */
+  header .head-content p{
+    font-size: 1.8rem;
+  }
+  /* ____________ HEADER END ____________ */
 
-/* section1 start */
+  /* section1 start */
   .section1 h2 strong{
     font-size: 3rem;
     display: flex;
@@ -452,12 +468,12 @@ nav .navigation-container .nav-flex{
     margin-left: 0;
   }
   .section1 p{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     margin-top: 5%;
   }
-/* section1 end*/
+  /* section1 end*/
 
-/* section2 start */
+  /* section2 start */
   .section2-container{
     padding: 40px 0%;
   }
@@ -467,6 +483,9 @@ nav .navigation-container .nav-flex{
   }
   .card .captioncard{
     opacity: 1;
+  }
+  .section2 img{
+    border: none;
   }
   .Rimg .konark, .card2, .card3{
     margin-top: 25px;
@@ -478,6 +497,7 @@ nav .navigation-container .nav-flex{
   }
   .captioncard-raja h1{
     font-size: 1.8rem;
+    margin-bottom: 0%;
   }
   .captioncard-raja p{
     font-size: 1.6rem;
@@ -523,22 +543,46 @@ nav .navigation-container .nav-flex{
 }
 /* footer end */
 
-  @media only screen and (max-width: 500px){
-    .navigation{
-        padding-top: 7px;
-    }
-    .brand-name a h1{
-        font-size: 2.7rem;
-    }
-    #hamburgerbutton{
-        padding: 4px 0;
-    }
-    .list ul{
-        padding-top: 45%;
-    }
-    .list ul li a{
-        font-size: 1.7rem;
-    }
+@media only screen and (max-width: 500px){
+  .navigation{
+      padding-top: 7px;
+  }
+  .brand-name a h1{
+      font-size: 3.2rem;
+  }
+  #hamburgerbutton{
+      padding: 4px 0;
+  }
+  .list ul{
+      padding-top: 45%;
+  }
+  .list ul li a{
+      font-size: 1.7rem;
+  }
+  header .head-content h1{
+    font-size: 3rem;
+  }
+  header .head-content h1 span strong{
+    font-weight: bold;
+    color: orange;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.842);
+  }
+  header .head-content p{
+    font-size: 1.8rem;
+    text-shadow: 0 0 5px black;
+  }
+  #head-line1{
+    display: none;
+  }
+  #head-line2{
+    display: block;
+  }
+  #head-para1{
+    display: none;
+  }
+  #head-para2{
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 375px){
@@ -551,6 +595,9 @@ nav .navigation-container .nav-flex{
   html{
     font-size: 48%;
   }
+  .brand-name a h1{
+    font-size: 3.2rem;
+}
   .navigation .name a p{
     font-size: 3.2rem;
   }

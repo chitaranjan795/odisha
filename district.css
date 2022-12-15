@@ -7,7 +7,7 @@
 
 /* navigation start */
 nav{
-  background-color: rgba(78, 146, 32, 0.801);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   height: auto;
@@ -75,22 +75,20 @@ nav .navigation-container .nav-flex{
 header{
   box-sizing: content-box;
   height: 38pc;
-  background-image: url("images/districtwall.jpg");
-  background-size: auto;
+  background-image: url("images/indexbann.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  background-attachment: scroll;
   display: flex;
   align-items: center;
   text-align: center;
 }
 
 #heading{
-  font-family: 'Inter', sans-serif;
-  font-size: 2.8rem;
-  color: #fff;
-  font-weight: bold;
-  text-shadow: 0 0 10px rgb(0,0,0,10);
+  font-family: 'Pacifico', cursive;
+  font-size: 3.6rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #heading1{
   display: none;
@@ -270,17 +268,17 @@ footer #up a:hover{
       transition: all 0.5s;
   }
   .list ul{
-      display: block;
-      position: absolute;
-      top: 0%;
-      left: -65vw;
-      width: 65vw; 
-      z-index: 2;
-      background-color: rgb(44, 117, 121);
-      text-align: left;
-      transition: all 0.5s ease-in-out;
-      padding-top: 25%;
-  }
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: -65vw;
+    width: 65vw; 
+    z-index: 3;
+    background-color: rgba(253, 253, 253, 0.842);
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+    padding-top: 25%;
+}
   .list ul li{
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       color: rgb(161, 152, 152);
@@ -344,14 +342,12 @@ footer #up a:hover{
   }
   #heading1{
     display: block;
-    color: #fff;
     text-align: left;
-    font-size: 2.8rem;
-    font-weight: 600;
-    text-align: left;
-    font-family: 'Inter', sans-serif;
-    text-shadow: 0 0 10px rgb(0,0,0,10);
-    text-align: left;
+    font-size: 3.2rem;
+    font-family: 'Pacifico', cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgba(199, 195, 195, 0.5);
+    line-height: 4rem;
   }
   /* header end */
   /* main start */
@@ -387,10 +383,10 @@ footer #up a:hover{
         padding-top: 7px;
     }
     .brand-name a h1{
-        font-size: 2.7rem;
-    }
+      font-size: 3.2rem;
+  }
     #hamburgerbutton{
-        padding: 4px 0;
+        padding: 2px 0;
     }
     .list ul{
         padding-top: 45%;
@@ -406,23 +402,14 @@ footer #up a:hover{
     box-sizing: content-box;
   }
 
-  .navigation{
-    height: 1rem;
-  }
-
   .detailes a{
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
   }
 }
 
-@media only screen and (max-width:350px){
-
-  .navigation .name p{
-      font-size: 3.4rem;
+@media only screen and (max-width: 361px){
+  html{
+    font-size: 48%;
   }
-  .link li a{
-    font-size: 1.5rem;
-}
-
 }

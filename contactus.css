@@ -6,12 +6,12 @@
   scroll-behavior: smooth;
 }
 body{
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(0, 0, 0);
 }
 
 /* navigation start */
 nav{
-  background-color: rgba(78, 146, 32, 0.801);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   height: auto;
@@ -80,12 +80,12 @@ nav .navigation-container .nav-flex{
 
 .paragraph{
   box-shadow:  0 0 10px rgba(57, 182, 19, 0.596);
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(0, 0, 0);
   margin-top: 80px;
-  color: gray;
+  color: rgb(170, 168, 168);
 }
 .paragraph p{
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 .paragraph h2{
   text-align: left;
@@ -178,16 +178,17 @@ nav .navigation-container .nav-flex{
       transition: all 0.5s;
   }
   .list ul{
-      display: block;
-      position: absolute;
-      top: 0%;
-      left: -65vw;
-      width: 65vw; 
-      background-color: rgb(44, 117, 121);
-      text-align: left;
-      transition: all 0.5s ease-in-out;
-      padding-top: 25%;
-  }
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: -65vw;
+    width: 65vw; 
+    z-index: 3;
+    background-color: rgba(253, 253, 253, 0.842);
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+    padding-top: 25%;
+}
   .list ul li{
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       color: rgb(161, 152, 152);
@@ -237,7 +238,7 @@ nav .navigation-container .nav-flex{
         padding-top: 7px;
     }
     .brand-name a h1{
-        font-size: 2.7rem;
+        font-size: 3.2rem;
     }
     #hamburgerbutton{
         padding: 4px 0;

@@ -8,7 +8,8 @@
 
 /* navigation start */
 nav{
-  background-color: rgba(78, 146, 32, 0.801);
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(218, 215, 215);
   display: flex;
   justify-content: space-between;
   height: auto;
@@ -194,17 +195,17 @@ footer #up a:hover{
       transition: all 0.5s;
   }
   .list ul{
-      display: block;
-      position: absolute;
-      top: 0%;
-      left: -65vw;
-      width: 65vw; 
-      z-index: 2;
-      background-color: rgb(44, 117, 121);
-      text-align: left;
-      transition: all 0.5s ease-in-out;
-      padding-top: 25%;
-  }
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: -65vw;
+    width: 65vw; 
+    z-index: 3;
+    background-color: rgba(253, 253, 253, 0.842);
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+    padding-top: 25%;
+}
   .list ul li{
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       color: rgb(161, 152, 152);
