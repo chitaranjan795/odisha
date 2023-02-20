@@ -1,17 +1,20 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Shippori Antique', sans-serif;
 }
-body{
+
+body {
   overflow-x: hidden;
   padding: 0%;
+  position: relative;
 }
+
 /* ____________ NAVIGATION START ____________ */
 
-nav{
+nav {
   background-color: rgb(255, 255, 255);
   background-size: cover;
   display: flex;
@@ -19,40 +22,50 @@ nav{
   height: auto;
   padding: 0 0 0 0;
 }
-.navigation-container{
+
+.navigation-container {
   padding: 0%;
 }
-nav .navigation-container .nav-flex{
+
+nav .navigation-container .nav-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0%;
 }
-.brand-name{
+
+.brand-name {
   margin: 6px 0;
-  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-between;
 }
-.brand-name a h1{
+
+.brand-name a h1 {
   color: black;
   margin: 0;
   font-weight: bold;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 4rem;
 }
-.brand-name a{
+
+.brand-name a {
   text-decoration: none;
 }
-.list ul{
+
+.brand-name a:hover {
+  color: antiquewhite;
+}
+
+.list ul {
   height: 100%;
-  padding:  0 0 0 0;
+  padding: 0 0 0 0;
   margin: 0px 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.list ul li{
+
+.list ul li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,406 +73,486 @@ nav .navigation-container .nav-flex{
   font-size: 2rem;
   font-weight: bold;
 }
-.list ul li a{
+
+.list ul li a {
   font-weight: bold;
   font-family: 'Montserrat Alternates', sans-serif;
   color: black;
 }
-#hamburgerbutton{
+
+#hamburgerbutton {
   width: 25px;
   margin: 0 0 0 0;
   display: none;
 }
-.hamburger .line:nth-child(2){
+
+.hamburger .line:nth-child(2) {
   width: 75%;
 }
-.hamburger .line:nth-child(3){
+
+.hamburger .line:nth-child(3) {
   width: 50%;
 }
+
 /* ____________ NAVIGATION END ____________ */
 
 /* ____________ HEADER START ____________ */
-  header{
-    width: 100vw;
-    height: 660px;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/odishabanner.jpg");
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .header-container{
-    padding: 0%;
-  }
-  header .head-content{
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-    padding: 0%;
-  }
-  header .head-content h1{
-    font-size: 4rem;
-    color: black;
-    font-family: 'Rubik Wet Paint', cursive;
-    margin-top: 0%;
-  }
-  header .head-content h1 span strong{
-    color: orange;
-    font-family: 'Montserrat Alternates', sans-serif;
-    text-shadow: 0 0 5px rgb(70, 68, 68);
-  }
-  header .head-content p{
-    font-size: 2.2rem;
-    letter-spacing: .1rem;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 5px rgb(0, 0, 0);
-    font-weight: 600;
-    margin-bottom: 0%;
-  }
-  #head-line2{
-    display: none;
-  }
-  #head-para2{
-    display: none;
-  }
+header {
+  width: 100vw;
+  height: 660px;
+  background: linear-gradient(rgba(0, 0, 0, 0.062), rgba(0, 0, 0, 0.062)), url("images/odishabanner.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container {
+  padding: 0%;
+}
+
+header .head-content {
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+  padding: 0%;
+}
+
+header .head-content h1 {
+  font-size: 4.5rem;
+  color: black;
+  font-family: 'Rubik Wet Paint', cursive;
+  margin-top: 0%;
+}
+
+header .head-content h1 span strong {
+  color: orange;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-shadow: 0 0 5px rgb(70, 68, 68);
+}
+
+header .head-content p {
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+  font-weight: 600;
+  margin-bottom: 0%;
+}
+
+#head-line2 {
+  display: none;
+}
+
+#head-para2 {
+  display: none;
+}
+
 /* ____________ HEADER END ____________ */
 
 /* section1 start */
-  .section1{
-    padding: 50px 0 25px 0;
-    text-align: justify;
-  }
+.section1 {
+  padding: 50px 0 25px 0;
+  text-align: justify;
+}
 
-  .section1 strong{
-    font-size: 4rem;
-    font-family: 'Montserrat Alternates', sans-serif;
-    text-shadow: 0 0 5px rgb(0,0,0,0.5);
-    margin-left: 5%;
-    text-align: center;
-  }
-  .section1 p{
-    font-size: 1.8rem;
-  }
-  .section1 img{
-    border-radius: 10px;
-  }
+.section1 strong {
+  font-size: 4rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+  margin-left: 5%;
+  text-align: center;
+}
+
+.section1 p {
+  font-size: 1.8rem;
+}
+
+.section1 img {
+  border-radius: 10px;
+}
 
 /* section1 end */
 
 /* section2 start */
-  .section2{
-    /* background:linear-gradient(45deg, burlywood 10%, rgb(94, 167, 167) 50%, rgb(168, 145, 93) 100%); */
-    background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0)), url("images/indexmiddle.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  .section2-container{
-    padding: 80px 0%;
-  }
-  .section2 img{
-    border-radius: 10px;
-    box-shadow: 0px 0px 50px 0px;
-    border: 5px solid #fff;
-  }
-  .limg .rajaimg{
-    position: relative;
-  }
-  .captioncard-raja{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    color: rgb(160, 156, 156);
-    padding: 50% 0 0% 3%;
-    transition: all ease-out 0.7s;
-    opacity: 0;
-    margin-left: 30%;
-  }
-  .rajaimg:hover>.captioncard-raja{
-    opacity: 1;
-    transition: all ease .6s;
-    margin-left: 0%;
-  }
-  .Limg .rajaimg .captioncard-raja h1{
-    font-family: 'Shippori Antique', sans-serif;
-  }
-  .captioncard-raja p{
-    font-size: 1.8rem;
-    font-family: 'Shippori Antique', sans-serif;
-  }
-  #rajabutton{
-    background-color: transparent;
-    border: none;
-  }
-  .puri, .threebox{
-    margin-top: 25px;
-  }
-  .card{
-    position: relative;
-  }
-  .captioncard{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(10, 10, 10, 0.5);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    overflow: hidden;
-    transition: all .5s;
-  }
-  .card:hover>.captioncard{
-    opacity: 1;
-    margin-left: 0%;
-    transition: all .5s;
-    overflow: hidden;
-  }
-  .captioncard-button{
-    padding: 5px 10px;
-    font-size: 1.8rem;
-    font-family: 'Shippori Antique', sans-serif;
-    text-decoration: none;
-    background-color: transparent;
-    border: 2px double #fff;
-    color: #fff;
-    font-weight: 600;
-    transition: all ease .6s;
-  }
-  .captioncard-button:hover{
-    background-color: #fff;color: black;
-    transition: all ease .4s;
-  }
+.section2 {
+  /* background:linear-gradient(45deg, burlywood 10%, rgb(94, 167, 167) 50%, rgb(168, 145, 93) 100%); */
+  background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0)), url("images/indexmiddle.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section2-container {
+  padding: 80px 0%;
+}
+
+.section2 img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px 0px;
+  border: 5px solid #fff;
+}
+
+.limg .rajaimg {
+  position: relative;
+}
+
+.captioncard-raja {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  color: rgb(160, 156, 156);
+  padding: 50% 0 0% 3%;
+  transition: all ease-out 0.7s;
+  opacity: 0;
+  margin-left: 30%;
+}
+
+.rajaimg:hover>.captioncard-raja {
+  opacity: 1;
+  transition: all ease .6s;
+  margin-left: 0%;
+}
+
+.Limg .rajaimg .captioncard-raja h1 {
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+.captioncard-raja p {
+  font-size: 1.8rem;
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+#rajabutton {
+  background-color: transparent;
+  border: none;
+}
+
+.puri,
+.threebox {
+  margin-top: 25px;
+}
+
+.card {
+  position: relative;
+}
+
+.captioncard {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.5);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+.card:hover>.captioncard {
+  opacity: 1;
+  margin-left: 0%;
+  transition: all .5s;
+  overflow: hidden;
+}
+
+.captioncard-button {
+  padding: 5px 10px;
+  font-size: 1.8rem;
+  font-family: 'Shippori Antique', sans-serif;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px double #fff;
+  color: #fff;
+  font-weight: 600;
+  transition: all ease .6s;
+}
+
+.captioncard-button:hover {
+  background-color: #fff;
+  color: black;
+  transition: all ease .4s;
+}
 
 /* section2 end */
 /* section3 start/Carousel start*/
-  .section3{
-    padding: 80px 0%;
-    font-family: 'Shippori Antique', sans-serif;
-  }
-  .section3 .sec3 .caption h3{
-    margin-bottom: -3px;
-    font-family: 'Shippori Antique', sans-serif;
-  }
-  .section3 .sec3 .caption p{
-    margin-bottom: -50px;
-    font-family: 'Shippori Antique', sans-serif;
-  }
+.section3 {
+  padding: 80px 0%;
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+.section3 .sec3 .caption h3 {
+  margin-bottom: -3px;
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+.section3 .sec3 .caption p {
+  margin-bottom: -50px;
+  font-family: 'Shippori Antique', sans-serif;
+}
+
 /* section3 start/Carousel end */
 /* section4 start/Carousel start*/
-  .section4{
-    display: none;
-    padding: 0 0;
-  }
-  .sec4{
-    padding: 0%;
-  }
-  .section4 .sec4 .caption h3{
-    margin-bottom: -3px;
-    font-family: 'Shippori Antique', sans-serif;
-  }
-  .section4 .sec4 .caption p{
-    margin-bottom: -30px;
-    font-family: 'Shippori Antique', sans-serif;
-  }
+.section4 {
+  display: none;
+  padding: 0 0;
+}
+
+.sec4 {
+  padding: 0%;
+}
+
+.section4 .sec4 .caption h3 {
+  margin-bottom: -3px;
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+.section4 .sec4 .caption p {
+  margin-bottom: -30px;
+  font-family: 'Shippori Antique', sans-serif;
+}
+
 /* section4 end/Carousel end*/
 /* footer start */
-  footer .row2 .sr h1, footer .row2 .R h1{  
-    font-size: 6rem;
-    font-family: 'Satisfy', cursive;
-    letter-spacing: 0.8rem;
-  }
-  footer{
-    background-color: black;
-    padding-bottom: 20px;
-  }
-  footer #up a{
-    background-color: rgb(197, 134, 17);
-    padding: 6px 12px;
-    color: #fff;
-    font-weight: 600;
-    transition: all 0.5s;
-    font-family: 'Shippori Antique', sans-serif;
-    font-size: 1rem;
-    text-decoration: none;
-    margin: 0rem;
-  }
-  footer #up a:hover{
-    text-decoration: none;
-    background-color: rgb(6, 112, 126);
-  }
-  .row1 :nth-child(1){
-    padding: 0%;
-  }
-  .footrow{
-    padding: 0;
-    border-bottom: 1px solid rgb(116, 121, 116);
-  }
-  .L1 h2, .L2 h2{
-    color: rgb(136, 131, 131);
-    font-family: 'Shippori Antique', sans-serif;
-  } 
-  .L1 a, .L2 a{
-    color: rgba(141, 141, 139, 0.568);
-    text-decoration: none;
-    font-size: 1.7rem;
-  }
-  .L a:hover{
-    padding-left: 8px;
-    transition: all .6s;
-  }
-  .L1 a p:hover, .L2 a p:hover{
-    padding-left: 3px;
-  }
-  .row2 h1,.R h1 strong{
-    color: rgb(155, 34, 34);
-    text-align: center;
-    font-family: 'Montserrat Alternates', sans-serif;
-  }
-  .R h1{
-    display: none;
-  }
-  .footrow a{
-    font-family: 'Shippori Antique', sans-serif;
-  }
-  .last p{
-    color: gray;
-  }
-  .last a{
-    color: gray;
-    text-decoration: none;
-    font-family: 'Shippori Antique', sans-serif;
-  }
+footer .row2 .sr h1,
+footer .row2 .R h1 {
+  font-size: 6rem;
+  font-family: 'Satisfy', cursive;
+  letter-spacing: 0.8rem;
+}
+
+footer {
+  background-color: black;
+  padding-bottom: 20px;
+}
+
+.top #up a span{
+  border: 1px solid rgba(97, 97, 107, 0.377);
+  padding: 5px;
+  background-color: antiquewhite;
+  box-shadow: 0 0 10px black;
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+}
+
+.top #up a:hover {
+  text-decoration: none;
+  background-color: rgb(6, 112, 126);
+}
+
+.row1 :nth-child(1) {
+  padding: 0%;
+}
+
+.footrow {
+  padding: 0;
+  border-bottom: 1px solid rgb(116, 121, 116);
+}
+
+.L1 h2,
+.L2 h2 {
+  color: rgb(136, 131, 131);
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+.L1 a,
+.L2 a {
+  color: rgba(141, 141, 139, 0.568);
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.L a:hover {
+  padding-left: 8px;
+  transition: all .6s;
+}
+
+.L1 a p:hover,
+.L2 a p:hover {
+  padding-left: 3px;
+}
+
+.row2 h1,
+.R h1 strong {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.R h1 {
+  display: none;
+}
+
+.footrow a {
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+.last p {
+  color: gray;
+}
+
+.last a {
+  color: gray;
+  text-decoration: none;
+  font-family: 'Shippori Antique', sans-serif;
+}
+
 /* footer end */
 
-@media only screen and (max-width: 1200px){
-  .brand-name a h1{
-      font-size: 3.2rem;
+@media only screen and (max-width: 1200px) {
+  .brand-name a h1 {
+    font-size: 3.2rem;
   }
-  .list ul li a{
-      font-size: 1.9rem;
+
+  .list ul li a {
+    font-size: 1.9rem;
   }
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {
 
   * {
-      box-sizing: border-box;
-      padding: 0%;
-      margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
   }
-  nav{
+
+  nav {
     width: 100%;
     display: block;
     padding: 0px 0px;
-}
-.brand-name{
-width: 100%;
-display: inline-flex;
-justify-content: space-between;
-}
-.brand-name a h1{
-font-size: 3.5rem;
-}
-#hamburgerbutton{
+  }
+
+  .brand-name {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  .brand-name a h1 {
+    font-size: 3.5rem;
+  }
+
+  #hamburgerbutton {
     display: block;
     padding: 10px 0;
     margin: 0%;
-} 
-.hamburger .line{
+  }
+
+  .hamburger .line {
     width: 100%;
     height: 2px;
     background-color: rgb(0, 0, 0);
     border-radius: 20px;
     margin-top: 4px;
-    transition: transform .5s, .35s; 
-}
-.hamburger.active .line:nth-child(1){
+    transition: transform .5s, .35s;
+  }
+
+  .hamburger.active .line:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
     transition: all 0.5s;
-}
-.hamburger.active .line:nth-child(2){
+  }
+
+  .hamburger.active .line:nth-child(2) {
     opacity: 0;
-}
-.hamburger.active .line:nth-child(3){
+  }
+
+  .hamburger.active .line:nth-child(3) {
     width: 100%;
     transform: translateY(-6px) rotate(-45deg);
     transition: all 0.5s;
-}
-.list ul{
+  }
+
+  .list ul {
     display: block;
     position: absolute;
     top: 0%;
     left: -65vw;
-    width: 65vw; 
+    width: 65vw;
     z-index: 3;
     background-color: rgba(253, 253, 253, 0.842);
     text-align: left;
     transition: all 0.5s ease-in-out;
     padding-top: 25%;
-}
-.list ul li{
+  }
+
+  .list ul li {
     color: rgb(161, 152, 152);
-}
-.list ul li{
+  }
+
+  .list ul li {
     margin: 0 0 30px 0;
-}
-.list ul.active{
+  }
+
+  .list ul.active {
     left: 0vw;
     box-shadow: 0 0 10px rgb(255, 255, 255);
-}
+  }
 }
 
-@media only screen and (max-width:768px){
-  html{
+@media only screen and (max-width:768px) {
+  html {
     font-size: 55%;
   }
-  body{
+
+  body {
     margin-top: 0px;
   }
 
   /* navigation start */
-  nav{
+  nav {
     padding: 4px 0px;
-}
-  #hamburgerbutton{
+  }
+
+  #hamburgerbutton {
     padding: 7px 0;
   }
-  .brand-name{
+
+  .brand-name {
     margin: 0%;
-}
-    .list ul li a{
+  }
+
+  .list ul li a {
     font-size: 1.8rem;
-}
-    .list ul{
-        padding-top: 30%;
-    }
+  }
+
+  .list ul {
+    padding-top: 30%;
+  }
+
   /* navigatin end */
 
   /* ____________ HEADER START ____________ */
-  header{
+  header {
     height: 460px;
   }
-  header .head-content h1{
+
+  header .head-content h1 {
     font-size: 3.3rem;
   }
-  header .head-content h1 span strong{
+
+  header .head-content h1 span strong {
     font-weight: bold;
     color: orange;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.842);
   }
-  header .head-content p{
+
+  header .head-content p {
     font-size: 1.8rem;
   }
+
   /* ____________ HEADER END ____________ */
 
   /* section1 start */
-  .section1 h2 strong{
+  .section1 h2 strong {
     font-size: 3rem;
     display: flex;
     align-items: center;
@@ -467,141 +560,177 @@ font-size: 3.5rem;
     text-align: center;
     margin-left: 0;
   }
-  .section1 p{
+
+  .section1 p {
     font-size: 1.7rem;
     margin-top: 5%;
   }
+
   /* section1 end*/
 
   /* section2 start */
-  .section2-container{
+  .section2-container {
     padding: 40px 0%;
   }
-  .captioncard-button{
+
+  .captioncard-button {
     font-size: 1.4rem;
     letter-spacing: .1rem;
   }
-  .card .captioncard{
+
+  .card .captioncard {
     opacity: 1;
   }
-  .section2 img{
+
+  .section2 img {
     border: none;
   }
-  .Rimg .konark, .card2, .card3{
+
+  .Rimg .konark,
+  .card2,
+  .card3 {
     margin-top: 25px;
   }
-  .captioncard-raja{
+
+  .captioncard-raja {
     opacity: 1;
     margin-left: 0%;
     padding: 44% 0 0% 3%;
   }
-  .captioncard-raja h1{
+
+  .captioncard-raja h1 {
     font-size: 1.8rem;
     margin-bottom: 0%;
   }
-  .captioncard-raja p{
+
+  .captioncard-raja p {
     font-size: 1.6rem;
   }
-  
-/* section2 end*/
 
-/* section3 start */
-  .section3{
+  /* section2 end*/
+
+  /* section3 start */
+  .section3 {
     display: none;
   }
-/* section3 end*/
 
-/* section4 start */
-.section4{
-  display: block;
-  padding: 40px 0;
-}
-.sec4 h3{
-  font-size: 1.9rem;
-}
-.sec4 p{
-  font-size: 1.6rem;
-}
-/* section4 end*/
+  /* section3 end*/
 
-/* footer start */
-  .L1 h2, .L2 h2{
+  /* section4 start */
+  .section4 {
+    display: block;
+    padding: 40px 0;
+  }
+
+  .sec4 h3 {
+    font-size: 1.9rem;
+  }
+
+  .sec4 p {
+    font-size: 1.6rem;
+  }
+
+  /* section4 end*/
+
+  /* footer start */
+  .L1 h2,
+  .L2 h2 {
     font-size: 2rem;
   }
-  .L1 a, .L2 a{
+
+  .L1 a,
+  .L2 a {
     font-size: 1.6rem;
   }
-  .row2 .sr h1 strong{
+
+  .row2 .sr h1 strong {
     font-size: 3.5rem;
   }
-  .R{
+
+  .R {
     display: none;
   }
-  .last p{
+
+  .last p {
     font-size: 1.2rem;
   }
 }
+
 /* footer end */
 
-@media only screen and (max-width: 500px){
-  .navigation{
-      padding-top: 7px;
+@media only screen and (max-width: 500px) {
+  .navigation {
+    padding-top: 7px;
   }
-  .brand-name a h1{
-      font-size: 3.2rem;
+
+  .brand-name a h1 {
+    font-size: 3.2rem;
   }
-  #hamburgerbutton{
-      padding: 4px 0;
+
+  #hamburgerbutton {
+    padding: 4px 0;
   }
-  .list ul{
-      padding-top: 45%;
+
+  .list ul {
+    padding-top: 45%;
   }
-  .list ul li a{
-      font-size: 1.7rem;
+
+  .list ul li a {
+    font-size: 1.7rem;
   }
-  header .head-content h1{
+
+  header .head-content h1 {
     font-size: 3rem;
   }
-  header .head-content h1 span strong{
+
+  header .head-content h1 span strong {
     font-weight: bold;
     color: orange;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.842);
   }
-  header .head-content p{
+
+  header .head-content p {
     font-size: 1.8rem;
     text-shadow: 0 0 5px black;
   }
-  #head-line1{
+
+  #head-line1 {
     display: none;
   }
-  #head-line2{
+
+  #head-line2 {
     display: block;
   }
-  #head-para1{
+
+  #head-para1 {
     display: none;
   }
-  #head-para2{
+
+  #head-para2 {
     display: block;
   }
 }
 
-@media only screen and (max-width: 375px){
-  .captioncard-raja p{
+@media only screen and (max-width: 375px) {
+  .captioncard-raja p {
     font-size: 1.2rem;
   }
 }
 
-@media only screen and (max-width: 361px){
-  html{
+@media only screen and (max-width: 361px) {
+  html {
     font-size: 48%;
   }
-  header h1{
+
+  header h1 {
     font-size: 2.5rem;
   }
-  .captioncard-raja h1{
+
+  .captioncard-raja h1 {
     font-size: 1.5rem;
   }
-  .captioncard-raja p{
+
+  .captioncard-raja p {
     font-size: 1.2rem;
   }
 }
