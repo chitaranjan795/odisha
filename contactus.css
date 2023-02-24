@@ -97,10 +97,6 @@ nav .navigation-container .nav-flex {
   color: rgb(170, 168, 168);
 }
 
-.paragraph p {
-  font-size: 3rem;
-}
-
 .paragraph h2 {
   text-align: left;
 }
@@ -146,6 +142,18 @@ nav .navigation-container .nav-flex {
 }
 
 /* footer end */
+#scroll-up a .fa{
+  padding: 8px 10px;
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: .1px;
+  right: 4%;
+  position: fixed;
+  background-color: rgba(49, 48, 48, 0.986);
+  color: #4ebe22;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.404);
+}
 
 @media only screen and (max-width: 1200px) {
   .brand-name a h1 {
@@ -297,7 +305,7 @@ nav .navigation-container .nav-flex {
     font-size: 1.7rem;
   }
   .last p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 

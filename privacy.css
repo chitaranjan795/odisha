@@ -96,21 +96,21 @@ nav .navigation-container .nav-flex {
 }
 
 .main-container li {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-left: 15px;
   color: gray;
 }
 
-.main-container h1,
-.main-container h2 {
+.main-container h4 {
   font-weight: 500;
   font-family: 'Inter', sans-serif;
   color: rgb(160, 156, 156);
+  font-weight: bold;
 }
 
 .main-container p {
   color: gray;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 footer {
@@ -124,6 +124,18 @@ footer {
 .last a {
   color: rgb(97, 95, 95);
   text-decoration: none;
+}
+#scroll-up a .fa{
+  padding: 8px 10px;
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: .1px;
+  right: 4%;
+  position: fixed;
+  background-color: rgba(49, 48, 48, 0.986);
+  color: #4ebe22;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.404);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -254,8 +266,7 @@ footer {
     margin: 40px auto 20px;
   }
 
-  .main-container h1,
-  .main-container h2 {
+  .main-container h4 {
     text-align: left;
     font-size: 2.8rem;
   }
@@ -296,8 +307,7 @@ footer {
     font-size: 1.6rem;
   }
 
-  .main-container h1,
-  .main-container h2 {
+  .main-container h4 {
     font-size: 2.6rem;
   }
 
@@ -311,8 +321,7 @@ footer {
     font-size: 3.2rem;
   }
 
-  .main-container h1,
-  .main-container h2 {
+  .main-container h4 {
     font-size: 2.3rem;
   }
 
