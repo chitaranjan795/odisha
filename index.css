@@ -11,6 +11,10 @@ body {
   padding: 0%;
   position: relative;
 }
+.container-fluid{
+  overflow-x: hidden;
+  width: 100%;
+}
 
 /* ____________ NAVIGATION START ____________ */
 
@@ -179,6 +183,7 @@ header .head-content p {
   background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0)), url("images/indexmiddle.jpg");
   background-size: cover;
   background-attachment: fixed;
+  overflow-y: hidden;
 }
 
 .section2-container {
@@ -409,7 +414,7 @@ header .head-content p {
   font-size: 1.8rem;
   position: absolute;
   bottom: .1px;
-  right: 4%;
+  right: 70px;
   position: fixed;
   background-color: rgba(49, 48, 48, 0.986);
   color: #4ebe22;
@@ -517,6 +522,12 @@ header .head-content p {
   .list ul.active {
     left: 0vw;
     box-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+  #scroll-up a .fa{
+    position: absolute;
+    bottom: .1px;
+    right: 3px;
+    position: fixed;
   }
 }
 

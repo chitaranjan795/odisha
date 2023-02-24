@@ -149,7 +149,7 @@ footer {
   font-size: 1.8rem;
   position: absolute;
   bottom: .1px;
-  right: 4%;
+  right: 70px;
   position: fixed;
   background-color: rgba(49, 48, 48, 0.986);
   color: #4ebe22;
@@ -288,6 +288,12 @@ footer {
 
   .last p {
     font-size: 1.2rem;
+  }
+  #scroll-up a .fa{
+    position: absolute;
+    bottom: .1px;
+    right: 3px;
+    position: fixed;
   }
 }
 

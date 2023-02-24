@@ -142,12 +142,12 @@ nav .navigation-container .nav-flex {
 }
 
 /* footer end */
-#scroll-up a .fa{
+#scroll-up a .fa {
   padding: 8px 10px;
   font-size: 1.8rem;
   position: absolute;
   bottom: .1px;
-  right: 4%;
+  right: 70px;
   position: fixed;
   background-color: rgba(49, 48, 48, 0.986);
   color: #4ebe22;
@@ -261,36 +261,44 @@ nav .navigation-container .nav-flex {
   .list ul {
     padding-top: 30%;
   }
-}
 
-/* navigation end */
-.paragraph p {
-  font-size: 1.4rem;
-  text-align: justify
-}
+  /* navigation end */
+  .paragraph p {
+    font-size: 1.4rem;
+    text-align: justify
+  }
 
-.paragraph h2 {
-  text-align: left;
-  font-size: 2rem;
-}
+  .paragraph h2 {
+    text-align: left;
+    font-size: 2rem;
+  }
 
-#comming {
-  text-align: center;
-  margin-top: 50px;
-}
+  #comming {
+    text-align: center;
+    margin-top: 50px;
+  }
 
-.contactus a span {
-  font-size: 2rem;
-  padding-left: 10px;
+  .contactus a span {
+    font-size: 2rem;
+    padding-left: 10px;
+  }
+
+  #scroll-up a .fa {
+    position: absolute;
+    bottom: .1px;
+    right: 3px;
+    position: fixed;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .navigation {
     padding-top: 7px;
+    width: 100%;
   }
 
   .brand-name a h1 {
-    font-size: 3.2rem;
+    font-size: 24.064px;
   }
 
   #hamburgerbutton {
@@ -304,13 +312,8 @@ nav .navigation-container .nav-flex {
   .list ul li a {
     font-size: 1.7rem;
   }
+
   .last p {
     font-size: 1.2rem;
   }
 }
-
-/* @media only screen and (max-width: 361px) {
-  html {
-    font-size: 48%;
-  }
-} */
