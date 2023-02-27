@@ -5,7 +5,6 @@
   scroll-behavior: smooth;
   font-family: 'Shippori Antique', sans-serif;
 }
-
 body {
   overflow-x: hidden;
   padding: 0%;
@@ -15,9 +14,7 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
-
 /* ____________ NAVIGATION START ____________ */
-
 nav {
   background-color: rgb(255, 255, 255);
   background-size: cover;
@@ -26,24 +23,20 @@ nav {
   height: auto;
   padding: 0 0 0 0;
 }
-
 .navigation-container {
   padding: 0%;
 }
-
 nav .navigation-container .nav-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0%;
 }
-
 .brand-name {
   margin: 6px 0;
   display: flex;
   justify-content: space-between;
 }
-
 .brand-name a h1 {
   color: black;
   margin: 0;
@@ -51,15 +44,12 @@ nav .navigation-container .nav-flex {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 4rem;
 }
-
 .brand-name a {
   text-decoration: none;
 }
-
 .brand-name a:hover {
   color: antiquewhite;
 }
-
 .list ul {
   height: 100%;
   padding: 0 0 0 0;
@@ -68,7 +58,6 @@ nav .navigation-container .nav-flex {
   justify-content: space-between;
   align-items: center;
 }
-
 .list ul li {
   display: flex;
   justify-content: center;
@@ -77,34 +66,28 @@ nav .navigation-container .nav-flex {
   font-size: 2rem;
   font-weight: bold;
 }
-
 .list ul li a {
   font-weight: bold;
   font-family: 'Montserrat Alternates', sans-serif;
   color: black;
 }
-
 #hamburgerbutton {
   width: 25px;
   margin: 0 0 0 0;
   display: none;
 }
-
 .hamburger .line:nth-child(2) {
   width: 75%;
 }
-
 .hamburger .line:nth-child(3) {
   width: 50%;
 }
-
 /* ____________ NAVIGATION END ____________ */
-
 /* ____________ HEADER START ____________ */
 header {
   width: 100vw;
   height: 660px;
-  background: linear-gradient(rgba(0, 0, 0, 0.062), rgba(0, 0, 0, 0.062)), url("images/odishabanner.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.062), rgba(0, 0, 0, 0.062)), url("images/homebanner.jpg");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -112,29 +95,24 @@ header {
   align-items: center;
   justify-content: center;
 }
-
 .header-container {
   padding: 0%;
 }
-
 header .head-content {
   text-shadow: 0 0 10px rgb(255, 255, 255);
   padding: 0%;
 }
-
 header .head-content h1 {
   font-size: 4.5rem;
   color: black;
   font-family: 'Rubik Wet Paint', cursive;
   margin-top: 0%;
 }
-
 header .head-content h1 span strong {
   color: orange;
   font-family: 'Montserrat Alternates', sans-serif;
   text-shadow: 0 0 5px rgb(70, 68, 68);
 }
-
 header .head-content p {
   font-size: 2rem;
   letter-spacing: .1rem;
@@ -143,23 +121,18 @@ header .head-content p {
   font-weight: 600;
   margin-bottom: 0%;
 }
-
 #head-line2 {
   display: none;
 }
-
 #head-para2 {
   display: none;
 }
-
 /* ____________ HEADER END ____________ */
-
 /* section1 start */
 .section1 {
   padding: 50px 0 25px 0;
   text-align: justify;
 }
-
 .section1 strong {
   font-size: 4rem;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -167,39 +140,31 @@ header .head-content p {
   margin-left: 5%;
   text-align: center;
 }
-
 .section1 p {
   font-size: 1.8rem;
 }
-
 .section1 img {
   border-radius: 10px;
 }
-
 /* section1 end */
-
 /* section2 start */
 .section2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0)), url("images/indexmiddle.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(255, 255, 255, 0)), url("images/homemiddle.jpg");
   background-size: cover;
   background-attachment: fixed;
   overflow-y: hidden;
 }
-
 .section2-container {
   padding: 80px 0%;
 }
-
 .section2 img {
   border-radius: 10px;
   box-shadow: 0px 0px 50px 0px;
   border: 5px solid #fff;
 }
-
 .limg .rajaimg {
   position: relative;
 }
-
 .captioncard-raja {
   position: absolute;
   top: 0%;
@@ -213,36 +178,29 @@ header .head-content p {
   opacity: 0;
   margin-left: 30%;
 }
-
 .rajaimg:hover>.captioncard-raja {
   opacity: 1;
   transition: all ease .6s;
   margin-left: 0%;
 }
-
 .Limg .rajaimg .captioncard-raja h1 {
   font-family: 'Shippori Antique', sans-serif;
 }
-
 .captioncard-raja p {
   font-size: 1.8rem;
   font-family: 'Shippori Antique', sans-serif;
 }
-
 #rajabutton {
   background-color: transparent;
   border: none;
 }
-
 .puri,
 .threebox {
   margin-top: 25px;
 }
-
 .card {
   position: relative;
 }
-
 .captioncard {
   position: absolute;
   top: 0%;
@@ -258,14 +216,12 @@ header .head-content p {
   overflow: hidden;
   transition: all .5s;
 }
-
 .card:hover>.captioncard {
   opacity: 1;
   margin-left: 0%;
   transition: all .5s;
   overflow: hidden;
 }
-
 .captioncard-button {
   padding: 5px 10px;
   font-size: 1.8rem;
@@ -277,66 +233,44 @@ header .head-content p {
   font-weight: 600;
   transition: all ease .6s;
 }
-
 .captioncard-button:hover {
   background-color: #fff;
   color: black;
   transition: all ease .4s;
 }
-
 /* section2 end */
 /* section3 start/Carousel start*/
 .section3 {
   padding: 80px 0%;
   font-family: 'Shippori Antique', sans-serif;
 }
-
 .section3 .sec3 .caption h3 {
   margin-bottom: -3px;
   font-family: 'Shippori Antique', sans-serif;
 }
-
 .section3 .sec3 .caption p {
   margin-bottom: -50px;
   font-family: 'Shippori Antique', sans-serif;
 }
-
 /* section3 start/Carousel end */
 /* section4 start/Carousel start*/
 .section4 {
   display: none;
   padding: 0 0;
 }
-
 .sec4 {
   padding: 0%;
 }
-
 .section4 .sec4 .caption h3 {
   margin-bottom: -3px;
   font-family: 'Shippori Antique', sans-serif;
 }
-
 .section4 .sec4 .caption p {
   margin-bottom: -30px;
   font-family: 'Shippori Antique', sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /* 🏁 ____________Footer start____________*/
-
 .footer-container-fluid {
-  /* background-image: linear-gradient(to right,rgba(0, 0, 0, 0.397),rgba(0, 0, 0, 0.432)),url("photos/districtbann1.jpg"); */
   background-color: rgb(19, 14, 14);
   background-size: cover;
   background-repeat: no-repeat;
@@ -344,12 +278,10 @@ header .head-content p {
   font-family: 'Shippori Antique', sans-serif;
   font-size: 1.3rem;
 }
-
 .footer-container-fluid .footer-container .footer-row .footer-col1 {
   padding: 0%;
   border-right: 1px solid rgba(128, 124, 124, 0.507);
 }
-
 .footer-container-fluid .footer-container .footer-row .footer-col1 .link {
   width: 50%;
   display: flex;
@@ -358,7 +290,6 @@ header .head-content p {
   margin-left: 50%;
   transform: translate(-50%);
 }
-
 .footer-container-fluid .footer-container .footer-row .footer-col1 .link a span:nth-child(n) {
   padding: 8px;
   border-radius: 100%;
@@ -366,17 +297,14 @@ header .head-content p {
   color: rgb(216, 202, 13);
   box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.37);
 }
-
 .footer-container-fluid .footer-container .footer-row .footer-col1 img {
   border-radius: 100%;
   margin-left: 50%;
   transform: translate(-50%);
 }
-
 .footer-container-fluid .footer-container .footer-row .footer-col2 {
   padding-left: 30px;
 }
-
 .footer-container-fluid .footer-container .footer-row:nth-child(n) h4 {
   margin-top: 0;
   padding: 0%;
@@ -384,30 +312,23 @@ header .head-content p {
   color: #fff;
   font-family: 'Times New Roman', Times, serif;
 }
-
 .footer-container-fluid .footer-container .footer-row:nth-child(n) a {
   text-decoration: none;
 }
-
 .footer-container-fluid .footer-container .footer-row:nth-child(n) a p {
   color: #e0dfdf;
   transition: all .15s;
 }
-
 .footer-container-fluid .footer-container .footer-row:nth-child(n) a p:hover {
   transition: all .15s;
   padding-left: 5px;
   color: yellow;
 }
-
 .footer-container-fluid .footer-container p a,
 .footer-container-fluid .footer-container p {
   color: #d4cfcf;
 }
-
 /* 🏁 ____________Footer end____________*/
-
-
 /* 🏁 ____________scroll-up start____________*/
 #scroll-up a .fa{
   padding: 8px 10px;
@@ -422,58 +343,38 @@ header .head-content p {
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.404);
 }
 /* 🏁 ____________scroll-up end____________*/
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1200px) {
   .brand-name a h1 {
     font-size: 3.2rem;
   }
-
   .list ul li a {
     font-size: 1.9rem;
   }
 }
-
 @media only screen and (max-width: 992px) {
-
   * {
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
   }
-
   nav {
     width: 100%;
     display: block;
     padding: 0px 0px;
   }
-
   .brand-name {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
   }
-
   .brand-name a h1 {
     font-size: 3.5rem;
   }
-
   #hamburgerbutton {
     display: block;
     padding: 10px 0;
     margin: 0%;
   }
-
   .hamburger .line {
     width: 100%;
     height: 2px;
@@ -482,22 +383,18 @@ header .head-content p {
     margin-top: 4px;
     transition: transform .5s, .35s;
   }
-
   .hamburger.active .line:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
     transition: all 0.5s;
   }
-
   .hamburger.active .line:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .line:nth-child(3) {
     width: 100%;
     transform: translateY(-6px) rotate(-45deg);
     transition: all 0.5s;
   }
-
   .list ul {
     display: block;
     position: absolute;
@@ -510,15 +407,12 @@ header .head-content p {
     transition: all 0.5s ease-in-out;
     padding-top: 25%;
   }
-
   .list ul li {
     color: rgb(161, 152, 152);
   }
-
   .list ul li {
     margin: 0 0 30px 0;
   }
-
   .list ul.active {
     left: 0vw;
     box-shadow: 0 0 10px rgb(255, 255, 255);
@@ -530,60 +424,46 @@ header .head-content p {
     position: fixed;
   }
 }
-
 @media only screen and (max-width:768px) {
   html {
     font-size: 55%;
   }
-
   body {
     margin-top: 0px;
   }
-
   /* navigation start */
   nav {
     padding: 4px 0px;
   }
-
   #hamburgerbutton {
     padding: 7px 0;
   }
-
   .brand-name {
     margin: 0%;
   }
-
   .list ul li a {
     font-size: 1.8rem;
   }
-
   .list ul {
     padding-top: 30%;
   }
-
   /* navigatin end */
-
   /* ____________ HEADER START ____________ */
   header {
     height: 460px;
   }
-
   header .head-content h1 {
     font-size: 3.3rem;
   }
-
   header .head-content h1 span strong {
     font-weight: bold;
     color: orange;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.842);
   }
-
   header .head-content p {
     font-size: 1.8rem;
   }
-
   /* ____________ HEADER END ____________ */
-
   /* section1 start */
   .section1 h2 strong {
     font-size: 3rem;
@@ -593,78 +473,60 @@ header .head-content p {
     text-align: center;
     margin-left: 0;
   }
-
   .section1 p {
     font-size: 1.7rem;
     margin-top: 5%;
   }
-
   /* section1 end*/
-
   /* section2 start */
   .section2-container {
     padding: 40px 0%;
   }
-
   .captioncard-button {
     font-size: 1.4rem;
     letter-spacing: .1rem;
   }
-
   .card .captioncard {
     opacity: 1;
   }
-
   .section2 img {
     border: none;
   }
-
   .Rimg .konark,
   .card2,
   .card3 {
     margin-top: 25px;
   }
-
   .captioncard-raja {
     opacity: 1;
     margin-left: 0%;
     padding: 44% 0 0% 3%;
   }
-
   .captioncard-raja h1 {
     font-size: 1.8rem;
     margin-bottom: 0%;
   }
-
   .captioncard-raja p {
     font-size: 1.6rem;
   }
-
   /* section2 end*/
-
   /* section3 start */
   .section3 {
     display: none;
   }
-
   /* section3 end*/
-
   /* section4 start */
   .section4 {
     display: block;
     padding: 40px 0;
   }
-
   .sec4 h3 {
     font-size: 1.9rem;
   }
-
   .sec4 p {
     font-size: 1.6rem;
   }
-
   /* section4 end*/
-
   /* footer start */
   .footer-container-fluid .footer-container .footer-row{
     text-align: center;
@@ -673,86 +535,67 @@ header .head-content p {
     padding-left: 15px;
     margin: 25px 0 10px 0;
   }
-
   .footer-container-fluid .footer-container .footer-row .footer-col3 {
     margin-bottom: 10px;
   }
 }
-
 /* footer end */
-
 @media only screen and (max-width: 500px) {
   .navigation {
     padding-top: 7px;
   }
-
   .brand-name a h1 {
     font-size: 3.2rem;
   }
-
   #hamburgerbutton {
     padding: 4px 0;
   }
-
   .list ul {
     padding-top: 45%;
   }
-
   .list ul li a {
     font-size: 1.7rem;
   }
-
   header .head-content h1 {
     font-size: 3rem;
   }
-
   header .head-content h1 span strong {
     font-weight: bold;
     color: orange;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.842);
   }
-
   header .head-content p {
     font-size: 1.8rem;
     text-shadow: 0 0 5px black;
   }
-
   #head-line1 {
     display: none;
   }
-
   #head-line2 {
     display: block;
   }
-
   #head-para1 {
     display: none;
   }
-
   #head-para2 {
     display: block;
   }
 }
-
 @media only screen and (max-width: 375px) {
   .captioncard-raja p {
     font-size: 1.2rem;
   }
 }
-
 @media only screen and (max-width: 361px) {
   html {
     font-size: 48%;
   }
-
   header h1 {
     font-size: 2.5rem;
   }
-
   .captioncard-raja h1 {
     font-size: 1.5rem;
   }
-
   .captioncard-raja p {
     font-size: 1.2rem;
   }

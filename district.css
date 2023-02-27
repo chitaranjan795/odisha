@@ -4,11 +4,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 body {
   overflow-x: hidden;
 }
-
 /* navigation start */
 nav {
   background-color: rgb(255, 255, 255);
@@ -17,25 +15,21 @@ nav {
   height: auto;
   padding: 0 0 0 0;
 }
-
 .navigation-container {
   padding: 0%;
 }
-
 nav .navigation-container .nav-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0%;
 }
-
 .brand-name {
   margin: 6px 0;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-between;
 }
-
 .brand-name a h1 {
   color: black;
   margin: 0;
@@ -43,11 +37,9 @@ nav .navigation-container .nav-flex {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 4rem;
 }
-
 .brand-name a {
   text-decoration: none;
 }
-
 .list ul {
   height: 100%;
   padding: 0 0 0 0;
@@ -56,7 +48,6 @@ nav .navigation-container .nav-flex {
   justify-content: space-between;
   align-items: center;
 }
-
 .list ul li {
   display: flex;
   justify-content: center;
@@ -65,33 +56,28 @@ nav .navigation-container .nav-flex {
   font-size: 2rem;
   font-weight: bold;
 }
-
 .list ul li a {
   font-weight: bold;
   font-family: 'Montserrat Alternates', sans-serif;
   color: black;
 }
-
 #hamburgerbutton {
   width: 25px;
   margin: 0 0 0 0;
   display: none;
 }
-
 .hamburger .line:nth-child(2) {
   width: 75%;
 }
-
 .hamburger .line:nth-child(3) {
   width: 50%;
 }
-
 /* navigation end */
 /* header start */
 header {
   box-sizing: content-box;
   height: 38pc;
-  background-image: url("images/indexbann.jpg");
+  background-image: url("images/districtbanner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -99,31 +85,25 @@ header {
   align-items: center;
   text-align: center;
 }
-
 #heading {
   font-family: 'Pacifico', cursive;
   font-size: 3.6rem;
   color: rgb(0, 0, 0);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 #heading1 {
   display: none;
 }
-
 /* header end */
 /* main start */
-
 .main {
   position: relative;
   top: -70px;
 }
-
 .card {
   position: relative;
   margin-bottom: 15px;
 }
-
 .detailes {
   width: 100%;
   height: 100%;
@@ -137,12 +117,10 @@ header {
   transition: all 0.3s;
   border-radius: 5px;
 }
-
 .card:hover>.detailes {
   background-color: rgba(0, 0, 0, 0.363);
   opacity: 1;
 }
-
 .card>.detailes>a {
   background-color: transparent;
   border: 3px dashed orangered;
@@ -153,7 +131,6 @@ header {
   letter-spacing: 0.1rem;
   transition: all 0.3s;
 }
-
 .detailes a {
   text-decoration: none;
   color: #fff;
@@ -161,7 +138,6 @@ header {
   border-radius: 20px;
   font-family: 'Poppins', sans-serif;
 }
-
 .card>.detailes>a:hover {
   border-radius: 0%;
   border: 0.1em solid #fff;
@@ -170,45 +146,35 @@ header {
   letter-spacing: 0.25rem;
   font-family: 'Poppins', sans-serif;
 }
-
 .district img {
   border-radius: 5px;
 }
-
 .district .leftcol {
   padding-left: 0%;
 }
-
 .district .middlecol {
   padding: 0%;
 }
-
 .district .rightcol {
   padding-right: 0%;
 }
-
 .tablet {
   display: none;
 }
-
 hr {
   border: 1px solid rgb(233, 224, 224);
   width: 80%;
   margin: 0 auto;
 }
-
 /* section end */
 /* footer start */
-
 footer {
   background-color: black;
   padding-bottom: 50px;
 }
-
 .last p {
   color: gray;
 }
-
 .last a {
   color: gray;
   text-decoration: none;
@@ -226,51 +192,40 @@ footer {
   border-radius: 10px 10px 0 0;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.404);
 }
-
 /* footer end */
-
 @media only screen and (max-width: 1200px) {
   .brand-name a h1 {
     font-size: 3.2rem;
   }
-
   .list ul li a {
     font-size: 1.9rem;
   }
 }
-
 @media only screen and (max-width:992px) {
-
   html {
     font-size: 55%;
   }
-
   body {
     background-color: #fff;
   }
-
   nav {
     width: 100%;
     display: block;
     padding: 4px 0px;
   }
-
   .brand-name {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
   }
-
   .brand-name a h1 {
     font-size: 3.2rem;
   }
-
   #hamburgerbutton {
     display: block;
     padding: 7px 0;
     margin: 0%;
   }
-
   .hamburger .line {
     width: 100%;
     height: 2px;
@@ -279,22 +234,18 @@ footer {
     margin-top: 4px;
     transition: transform .5s, .35s;
   }
-
   .hamburger.active .line:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
     transition: all 0.5s;
   }
-
   .hamburger.active .line:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .line:nth-child(3) {
     width: 100%;
     transform: translateY(-6px) rotate(-45deg);
     transition: all 0.5s;
   }
-
   .list ul {
     display: block;
     position: absolute;
@@ -307,85 +258,66 @@ footer {
     transition: all 0.5s ease-in-out;
     padding-top: 25%;
   }
-
   .list ul li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(161, 152, 152);
   }
-
   .list ul li {
     margin: 0 0 30px 0;
   }
-
   .list ul.active {
     left: 0vw;
     box-shadow: 0 0 10px rgb(255, 255, 255);
   }
-
   .detailes {
     opacity: 1;
   }
-
   .detailes a {
     font-family: 'Poppins', sans-serif;
   }
-
   .card .detailes {
     background-color: rgba(20, 22, 22, 0.514);
     opacity: 1;
   }
-
   .rightcol {
     display: none;
   }
-
   .district .middlecol {
     padding-left: 15px;
   }
-
   .tablet {
     display: block;
   }
-
   .tabletleftcol {
     padding-left: 0%;
   }
-
   .tabletrightcol {
     padding-right: 0%;
   }
-
 }
-
 @media only screen and (max-width:768px) {
   html {
     font-size: 55%;
   }
-
   /* navigation start */
   .brand-name {
     margin: 0%;
   }
-
   .list ul li a {
     font-size: 1.8rem;
   }
-
   .list ul {
     padding-top: 30%;
   }
-
   /* navigatin end */
   /* header start */
   header {
     margin-top: auto;
     height: 500px;
   }
-
   #heading {
     display: none;
   }
-
   #heading1 {
     display: block;
     text-align: left;
@@ -396,27 +328,22 @@ footer {
     line-height: 4rem;
     margin: 0 0 30px 0;
   }
-
   /* header end */
   /* main start */
   .detailes {
     opacity: 1;
   }
-
   .card .detailes {
     background-color: rgba(20, 22, 22, 0.514);
     opacity: 1;
   }
-
   .card>.detailes>a {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
   }
-
   .card>.detailes>button {
     font-size: 1.6rem;
   }
-
   /* main start */
   .district .leftcol,
   .district .rightcol,
@@ -425,7 +352,6 @@ footer {
   .tabletrightcol {
     padding: 0%;
   }
-
   .last p {
     font-size: 1.2rem;
   }
@@ -435,43 +361,34 @@ footer {
     right: 3px;
     position: fixed;
   }
-
 }
-
 @media only screen and (max-width: 500px) {
   .navigation {
     padding-top: 7px;
   }
-
   .brand-name a h1 {
     font-size: 3.2rem;
   }
-
   #hamburgerbutton {
     padding: 5px 0;
   }
-
   .list ul {
     padding-top: 45%;
   }
-
   .list ul li a {
     font-size: 1.7rem;
   }
 }
-
 @media only screen and (max-width:407px) {
   html {
     font-size: 47%;
     box-sizing: content-box;
   }
-
   .detailes a {
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
   }
 }
-
 @media only screen and (max-width: 361px) {
   html {
     font-size: 48%;

@@ -4,12 +4,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 body {
   overflow-x: hidden;
   background-color: rgb(0, 0, 0);
 }
-
 /* navigation start */
 nav {
   background-color: rgb(255, 255, 255);
@@ -18,25 +16,21 @@ nav {
   height: auto;
   padding: 0 0 0 0;
 }
-
 .navigation-container {
   padding: 0%;
 }
-
 nav .navigation-container .nav-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0%;
 }
-
 .brand-name {
   margin: 6px 0;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-between;
 }
-
 .brand-name a h1 {
   color: black;
   margin: 0;
@@ -44,11 +38,9 @@ nav .navigation-container .nav-flex {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 4rem;
 }
-
 .brand-name a {
   text-decoration: none;
 }
-
 .list ul {
   height: 100%;
   padding: 0 0 0 0;
@@ -57,7 +49,6 @@ nav .navigation-container .nav-flex {
   justify-content: space-between;
   align-items: center;
 }
-
 .list ul li {
   display: flex;
   justify-content: center;
@@ -66,81 +57,65 @@ nav .navigation-container .nav-flex {
   font-size: 2rem;
   font-weight: bold;
 }
-
 .list ul li a {
   font-weight: bold;
   font-family: 'Montserrat Alternates', sans-serif;
   color: black;
 }
-
 #hamburgerbutton {
   width: 25px;
   margin: 0 0 0 0;
   display: none;
 }
-
 .hamburger .line:nth-child(2) {
   width: 75%;
 }
-
 .hamburger .line:nth-child(3) {
   width: 50%;
 }
-
 /* navigation end */
 /* paragraph start */
-
 .paragraph {
   box-shadow: 0 0 10px rgba(57, 182, 19, 0.596);
   background-color: rgb(0, 0, 0);
   margin-top: 80px;
   color: rgb(170, 168, 168);
 }
-
 .paragraph h2 {
   text-align: left;
 }
-
 #comming {
   text-align: center;
 }
-
 .paragraph p,
 .paragraph h2 {
   font-family: 'Shippori Antique', sans-serif;
 }
-
 /* paragraph end */
 /* footer start */
 .contactus a span {
   font-size: 2rem;
   padding-left: 30px;
 }
-
 .fa-facebook {
   color: rgb(212, 227, 230)
 }
-
 .fa-instagram {
   /* color: linear-gradient(45deg yellow 10%, pink 90%); */
   color: rgb(255, 192, 211);
 }
-
 .fa-twitter {
   color: rgb(14, 112, 151);
 }
-
 .last p {
   color: gray;
   font-family: 'Shippori Antique', sans-serif;
 }
-
 .last a {
   color: gray;
   text-decoration: none;
   font-family: 'Shippori Antique', sans-serif;
 }
-
 /* footer end */
 #scroll-up a .fa {
   padding: 8px 10px;
@@ -154,47 +129,38 @@ nav .navigation-container .nav-flex {
   border-radius: 10px 10px 0 0;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.404);
 }
-
 @media only screen and (max-width: 1200px) {
   .brand-name a h1 {
     font-size: 3.2rem;
   }
-
   .list ul li a {
     font-size: 1.9rem;
   }
 }
-
 @media only screen and (max-width: 992px) {
-
   * {
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
   }
-
   nav {
     width: 100%;
     display: block;
     padding: 4px 0px;
   }
-
   .brand-name {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
   }
-
   .brand-name a h1 {
     font-size: 3.2rem;
   }
-
   #hamburgerbutton {
     display: block;
     padding: 7px 0;
     margin: 0%;
   }
-
   .hamburger .line {
     width: 100%;
     height: 2px;
@@ -203,22 +169,18 @@ nav .navigation-container .nav-flex {
     margin-top: 4px;
     transition: transform .5s, .35s;
   }
-
   .hamburger.active .line:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
     transition: all 0.5s;
   }
-
   .hamburger.active .line:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .line:nth-child(3) {
     width: 100%;
     transform: translateY(-6px) rotate(-45deg);
     transition: all 0.5s;
   }
-
   .list ul {
     display: block;
     position: absolute;
@@ -231,58 +193,47 @@ nav .navigation-container .nav-flex {
     transition: all 0.5s ease-in-out;
     padding-top: 25%;
   }
-
   .list ul li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(161, 152, 152);
   }
-
   .list ul li {
     margin: 0 0 30px 0;
   }
-
   .list ul.active {
     left: 0vw;
     box-shadow: 0 0 10px rgb(255, 255, 255);
   }
 }
-
 @media only screen and (max-width:768px) {
   /* navigation start */
 
   .brand-name {
     margin: 0%;
   }
-
   .list ul li a {
     font-size: 1.8rem;
   }
-
   .list ul {
     padding-top: 30%;
   }
-
   /* navigation end */
   .paragraph p {
     font-size: 1.4rem;
     text-align: justify
   }
-
   .paragraph h2 {
     text-align: left;
     font-size: 2rem;
   }
-
   #comming {
     text-align: center;
     margin-top: 50px;
   }
-
   .contactus a span {
     font-size: 2rem;
     padding-left: 10px;
   }
-
   #scroll-up a .fa {
     position: absolute;
     bottom: .1px;
@@ -290,29 +241,23 @@ nav .navigation-container .nav-flex {
     position: fixed;
   }
 }
-
 @media only screen and (max-width: 500px) {
   .navigation {
     padding-top: 7px;
     width: 100%;
   }
-
   .brand-name a h1 {
     font-size: 24.064px;
   }
-
   #hamburgerbutton {
     padding: 5px 0;
   }
-
   .list ul {
     padding-top: 45%;
   }
-
   .list ul li a {
     font-size: 1.7rem;
   }
-
   .last p {
     font-size: 1.2rem;
   }
